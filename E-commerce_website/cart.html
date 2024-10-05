@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Cloudy Bay</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1><img src="cloudybay_logo.jpg" alt="Cloudy Bay Logo" class="circle-image"><br>Cloudy Bay</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main style="text-align: center;">
+        <h2>Your Cart</h2>
+        <p>Your Cart Take a moment to review the items you've added to your cart. Enjoy the convenience of shopping from home and keep track of
+            your purchases.If you're ready to check out,simply click the button below to proceed with your order. 
+            Don’t forget, items in your cart are reserved just for you, 
+            so complete your purchase before they’re gone!
+        </p>
+
+        <section id="cart-section">
+            <div class="cart-container">
+                <table id="cart-table">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-items">
+                    </tbody>
+                </table>
+                <div id="cart-summary">
+                    <p>Total Items: <span id="total-items">0</span></p>
+                    <p>Total Price: $<span id="total-price">0.00</span></p>
+                    <button onclick="checkout()">Proceed to Checkout</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Cloudy Bay website</p>
+    </footer>
+</body>
+</html>
